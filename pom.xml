@@ -17,6 +17,7 @@
         <module>eladmin-generator</module>
         <module>eladmin-web-study</module>
         <module>alg-python-socket</module>
+        <module>alg-image-detection</module>
     </modules>
 
     <name>EL-ADMIN后台管理系统</name>

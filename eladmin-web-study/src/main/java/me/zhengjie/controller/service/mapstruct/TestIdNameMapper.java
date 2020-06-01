@@ -25,6 +25,9 @@ import org.mapstruct.ReportingPolicy;
 * @website https://el-admin.vip
 * @author wg01
 * @date 2020-05-30
+ *
+ * crud
+ *
 **/
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface TestIdNameMapper extends BaseMapper<TestIdNameDto, TestIdName> {

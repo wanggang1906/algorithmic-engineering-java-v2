@@ -23,6 +23,9 @@ import java.io.Serializable;
 * @description /
 * @author wg01
 * @date 2020-05-30
+ *
+ * crud实体类
+ *
 **/
 @Data
 public class TestIdNameDto implements Serializable {

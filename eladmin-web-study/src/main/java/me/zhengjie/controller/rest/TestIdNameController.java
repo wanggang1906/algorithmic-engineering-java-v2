@@ -34,6 +34,11 @@ import javax.servlet.http.HttpServletResponse;
 * @website https://el-admin.vip
 * @author wg01
 * @date 2020-05-30
+ *
+ * 自动生成的crud
+ * 默认提供，增(create,post)，删(delet,delete)，改(update,put)，查(query,get)，导出数据(download,get)的方法
+ *
+ *
 **/
 @RestController
 @RequiredArgsConstructor
@@ -51,11 +56,19 @@ public class TestIdNameController {
         testIdNameService.download(testIdNameService.queryAll(criteria), response);
     }
 
+    /**
+     * @PreAuthorize、@PostAuthorize - 用来在方法调用前或者调用后进行权限检查
+     * @PreFilter和@PostFilter - 用来对集合类型的参数或者返回值进行过滤。要使它们的定义能够
+     * 对的方法的调用产生影响需要设置global-method-security元素的pre-post-annotations=”enabled”，默认为disabled
+     **/
+
     @GetMapping
-    @Log("查询wgcrud")
-    @ApiOperation("查询wgcrud")
-    @PreAuthorize("@el.check('testIdName:list')")
+    @Log("查询wgcrud") // 自定义注解 - 日志
+    @ApiOperation("查询wgcrud") // swagger注解 - api说明(可包含请求方式，参数类型，发布说明等)
+    // @ApiParam() // swagger注解 - 参数是否必须，类型，描述等信息
+    @PreAuthorize("@el.check('testIdName:list')") // spring security注解 - 接口授权，通过表达式控制方法权限
     public ResponseEntity<Object> query(TestIdNameQueryCriteria criteria, Pageable pageable){
+        System.out.println("query");
         return new ResponseEntity<>(testIdNameService.queryAll(criteria,pageable),HttpStatus.OK);
     }
 

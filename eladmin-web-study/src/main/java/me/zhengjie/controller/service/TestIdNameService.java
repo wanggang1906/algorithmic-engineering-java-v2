@@ -29,6 +29,9 @@ import javax.servlet.http.HttpServletResponse;
 * @description 服务接口
 * @author wg01
 * @date 2020-05-30
+ *
+ * crud实现接口类 - mapstruct映射接口
+ *
 **/
 public interface TestIdNameService {
 

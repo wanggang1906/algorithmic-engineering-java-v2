@@ -23,6 +23,10 @@ import me.zhengjie.annotation.Query;
 * @website https://el-admin.vip
 * @author wg01
 * @date 2020-05-30
+ *
+ *
+ * crud响应类
+ *
 **/
 @Data
 public class TestIdNameQueryCriteria{

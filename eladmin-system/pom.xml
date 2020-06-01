@@ -20,6 +20,13 @@
 
     <dependencies>
         <!-- 自己新键的模块在此被引入sys -->
+
+
+        <dependency>
+            <groupId>me.zhengjie</groupId>
+            <artifactId>alg-image-detection</artifactId>
+            <version>2.4</version>
+        </dependency>
         <dependency>
             <groupId>me.zhengjie</groupId>
             <artifactId>eladmin-web-study</artifactId>

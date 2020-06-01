@@ -42,6 +42,9 @@ import java.util.LinkedHashMap;
 * @description 服务实现
 * @author wg01
 * @date 2020-05-30
+ *
+ * crud实现类
+ *
 **/
 @Service
 @RequiredArgsConstructor

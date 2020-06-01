@@ -9,11 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>eladmin-web-study</artifactId>
-    <name>web学习模块</name>
+    <artifactId>alg-image-detection</artifactId>
+    <name>图片检测模块</name>
 
     <dependencies>
-
         <!-- tools 模块包含了 common 和 logging 模块 -->
         <dependency>
             <groupId>me.zhengjie</groupId>
